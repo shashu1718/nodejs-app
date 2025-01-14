@@ -10,10 +10,10 @@ const db = require('./database/db'); // Import the database module
 const app = express();
 const port = 3000;
 
-// In-memory storage for OTPs
+
 const otpStorage = {};
 
-// Middleware
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
